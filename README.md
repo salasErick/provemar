@@ -1,4 +1,4 @@
-### Requirements
+## Requirements
 Install the newest version
 - [Composer](https://getcomposer.org/)
 - [PHP](https://www.php.net/)
@@ -11,7 +11,7 @@ PHP extension for PostgreSQL (use the appropriate package manager for your distr
 sudo dnf install php-pgsql
 ```
 
-### Installation
+## Installation
 > Make sure to follow the requirements.
 1. Clone the repository
 ```
