@@ -6,9 +6,15 @@ Install the newest version
 - [NPM](https://www.npmjs.com/)
 - [PostgreSQL](https://www.postgresql.org/)
 
-PHP extension for PostgreSQL (use the appropriate package manager for your distribution)
+### PHP extension for PostgreSQL
+#### Fedora / RHEL / CentOS / Mageia / OpenMandriva
 ```
 sudo dnf install php-pgsql
+```
+
+#### Ubuntu
+```
+sudo apt-get install php-pgsql
 ```
 
 ## Installation
