@@ -1,3 +1,28 @@
+<script setup>
+  import { router } from '@inertiajs/vue3';
+import UserLayouts from './Layouts/UserLayouts.vue';
+  defineProps({
+    products: Array
+})
+
+const addToCart = (product) => {
+  console.log(product)
+  router.post(route('cart.store'), product, {
+    onSuccess: (page) => {
+      if (page.props.flash.success) {
+        Swal.fire({
+          toast: true,
+          icon: "sucess",
+          position: "top-end",
+          showConfirmButton: false,
+          title: page.props.flash.success
+        });
+      }
+    }
+  })
+}
+
+</script>
 <template>
 <UserLayouts>
   <div class="bg-white">
@@ -29,9 +54,3 @@
 
 </UserLayouts>
 </template>
-<script setup>
-  import UserLayouts from './Layouts/UserLayouts.vue';
-  defineProps({
-    products: Array
-})
-</script>
